@@ -7,6 +7,7 @@
 - Upgraded TypeScript from 5.9.3 to 6.0.3
 - Upgraded Node.js minimum requirement from 18 to 24
 - Upgraded Grafana Plugin SDK (Go backend) from v0.290.0 to v0.292.1
+- Upgraded mage from 1.15.0 to 1.17.2
 - Upgraded Go from 1.26.1 to 1.26.4
 - Updated project license file
 

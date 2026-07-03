@@ -53,7 +53,7 @@ the requests.
 * On the [gtm-grafana-datasource-plugin](https://github.com/akamai/gtm-grafana-datasource-plugin) GitHub repository, 
 under "Releases", select "Grafana datasource for Akamai Global Traffic Management (GTM)  metrics v2.1.0".
 
-* Copy "akamai-gtm-datasource-2.0.1.zip" to your computer.  Unzip the archive.
+* Copy "akamai-gtm-datasource-2.1.0.zip" to your computer.  Unzip the archive.
 
 ### Linux OSs (Debian, Ubuntu, CentOS, Fedora, OpenSuse, Red Hat)
 

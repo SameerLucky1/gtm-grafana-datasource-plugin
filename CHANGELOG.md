@@ -9,6 +9,7 @@
 - Upgraded Grafana Plugin SDK (Go backend) from v0.290.0 to v0.292.1
 - Upgraded mage from 1.15.0 to 1.17.2
 - Upgraded Go from 1.26.1 to 1.26.4
+- Upgraded Yarn from 1.22.22 to 4.17.0 (Yarn Berry)
 - Updated project license file
 
 ## 2.0.1

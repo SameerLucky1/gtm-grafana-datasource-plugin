@@ -19,9 +19,16 @@ See these references:
 * [Build a data source plugin](https://grafana.com/tutorials/build-a-data-source-plugin/)
 
 ### First time build
-Run this command:
+
+#### Prerequisites
+This project uses Yarn v4.17.0 (Yarn Berry) via Corepack. If you haven't enabled Corepack yet:
 ```
-yarn install --pure-lockfile
+corepack enable
+```
+
+#### Install dependencies
+```
+yarn install
 ```
 
 ### Build the back end
@@ -54,55 +61,15 @@ yarn build
 My output (after having previously built), looks like this:
 ```
 $ yarn build
-yarn run v1.22.10
-$ grafana-toolkit plugin:build
-✔ Preparing
-✔ Linting
-No tests found, exiting with code 0
-✔ Running tests
-⠙ Compiling...  Starting type checking service...
-  Using 1 worker with 2048MB memory limit
-⠙ Compiling...  
-   Hash: ff7600d671e6bd368aad
-  Version: webpack 4.41.5
-  Time: 5879ms
-  Built at: 03/25/2021 3:54:15 PM
-                  Asset       Size  Chunks                   Chunk Names
-           CHANGELOG.md    0 bytes          [emitted]        
-                LICENSE   11.1 KiB          [emitted]        
-              README.md   5.02 KiB          [emitted]        
-    img/akamai-logo.png   1.72 KiB          [emitted]        
-           img/logo.svg   1.55 KiB          [emitted]        
-              module.js     12 KiB       0  [emitted]        module
-  module.js.LICENSE.txt  808 bytes          [emitted]        
-          module.js.map   75.4 KiB       0  [emitted] [dev]  module
-            plugin.json   1.02 KiB          [emitted]        
-  Entrypoint module = module.js module.js.map
-   [0] external "react" 42 bytes {0} [built]
-   [1] ../node_modules/lodash/isObject.js 733 bytes {0} [built]
-   [2] external "@grafana/ui" 42 bytes {0} [built]
-   [6] ../node_modules/lodash/identity.js 370 bytes {0} [built]
-  [10] ../node_modules/lodash/eq.js 799 bytes {0} [built]
-  [11] ../node_modules/lodash/isArrayLike.js 830 bytes {0} [built]
-  [13] ../node_modules/lodash/_isIndex.js 759 bytes {0} [built]
-  [15] external "@grafana/data" 42 bytes {0} [built]
-  [16] external "@grafana/runtime" 42 bytes {0} [built]
-  [17] ../node_modules/lodash/defaults.js 1.71 KiB {0} [built]
-  [18] ../node_modules/lodash/_baseRest.js 559 bytes {0} [built]
-  [19] ../node_modules/lodash/_overRest.js 1.07 KiB {0} [built]
-  [35] ../node_modules/lodash/_isIterateeCall.js 877 bytes {0} [built]
-  [36] ../node_modules/lodash/keysIn.js 778 bytes {0} [built]
-  [51] ./module.ts + 5 modules 19.3 KiB {0} [built]
-       | ./module.ts 905 bytes [built]
-       | ./DataSource.ts 961 bytes [built]
-       | ./ConfigEditor.tsx 4.07 KiB [built]
-       | ./QueryEditor.tsx 2.68 KiB [built]
-       | ../node_modules/tslib/tslib.es6.js 10 KiB [built]
-       | ./types.ts 638 bytes [built]
-      + 37 hidden modules 
-  
-✔ Compiling...
-✨  Done in 15.14s.
+assets by path *.md 8.96 KiB
+  asset README.md 8.13 KiB [compared for emit] [from: ../README.md] [copied]
+  asset CHANGELOG.md 854 bytes [compared for emit] [from: ../CHANGELOG.md] [copied]
+asset module.js 12.5 KiB [compared for emit] [minimized] (name: module) 1 related asset
+asset LICENSE 11.1 KiB [compared for emit] [from: ../LICENSE] [copied]
+asset img/akamai-logo.png 1.72 KiB [compared for emit] [from: img/akamai-logo.png] [copied]
+asset plugin.json 1.26 KiB [emitted] [from: plugin.json] [copied]
+cached modules 56 KiB (javascript) 1.74 KiB (runtime) [cached] 64 modules
+webpack 5.108.2 compiled successfully in 84 ms
 ```
 
 ## Commit your changes 

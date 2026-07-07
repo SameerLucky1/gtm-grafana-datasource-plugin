@@ -10,7 +10,7 @@ Edit package.json
 
 Advance the version number.  For example:
 ```
-  "version": "2.0.0",
+  "version": "2.1.0",
 ```
 
 ## Build
@@ -80,14 +80,14 @@ Open a Pull Request.
 Copy the 'dist' directory to 'akamai-gtm-datasource' and then compress.
 ```
 cp -r dist akamai-gtm-datasource
-zip akamai-gtm-datasource-2.0.0.zip akamai-gtm-datasource/ -r
+zip akamai-gtm-datasource-2.1.0.zip akamai-gtm-datasource/ -r
 ```
-'2.0.0' is an example. Use your current plugin version number.
+'2.1.0' is an example. Use your current plugin version number.
 
 ## Release
 Navigate to https://github.com/akamai/gtm-grafana-datasource-plugin.
 Log in. (You'll need admin rights.)
 
 Follow the directions in [Managing releases in a repository](https://docs.github.com/en/github/administering-a-repository/managing-releases-in-a-repository).  
-Tags should start with 'v', followed by the build number.  For example, 'v2.0.0'.  
+Tags should start with 'v', followed by the build number.  For example, 'v2.1.0'.  
 
